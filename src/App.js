@@ -1,9 +1,17 @@
 import "./App.css";
+import Steps from "./Components/Steps";
 
 function App() {
     return (
         <div className="App">
-            <h1>Hi</h1>
+            <div className="container ">
+                <div className="left">
+                    <Steps />
+                    <div className="bg"></div>
+                </div>
+                <div className="right">Right</div>
+                <div className="bottom">Bottom</div>
+            </div>
         </div>
     );
 }
