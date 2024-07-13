@@ -7,7 +7,6 @@ function App() {
             <div className="container ">
                 <div className="left">
                     <Steps />
-                    <div className="bg"></div>
                 </div>
                 <div className="right">Right</div>
                 <div className="bottom">Bottom</div>
