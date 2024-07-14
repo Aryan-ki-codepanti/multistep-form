@@ -1,19 +1,12 @@
 import React, { useState } from "react";
 import FormContext from "./FormContext";
+import { FormOneDefault, FormOneErrorDefault } from "../../Utils/InitialStates";
 
 const FormProvider = ({ children }) => {
     // stepOne
-    const [formOne, setFormOne] = useState({
-        name: "",
-        email: "",
-        phone: ""
-    });
+    const [formOne, setFormOne] = useState(FormOneDefault);
 
-    const [formOneError, setFormOneError] = useState({
-        name: false,
-        email: false,
-        phone: false
-    });
+    const [formOneError, setFormOneError] = useState(FormOneErrorDefault);
 
     return (
         <FormContext.Provider

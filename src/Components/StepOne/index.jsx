@@ -41,7 +41,7 @@ const StepOne = () => {
             >
                 <div className="head">
                     <span>Email Address</span>
-                    <span>This field is required</span>
+                    <span>{formOneError.emailError}</span>
                 </div>
                 <input
                     type="email"
@@ -58,7 +58,7 @@ const StepOne = () => {
             >
                 <div className="head">
                     <span>Phone Number</span>
-                    <span>This field is required</span>
+                    <span>{formOneError.phoneError}</span>
                 </div>
                 <input
                     type="tel"

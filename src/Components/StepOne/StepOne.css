@@ -3,6 +3,7 @@
 }
 
 .right p {
+    margin-top: 0.8em;
     color: var(--Cool_gray);
     font-size: 0.9rem;
     font-weight: 400;

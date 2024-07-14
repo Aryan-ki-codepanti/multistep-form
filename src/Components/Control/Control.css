@@ -1,0 +1,37 @@
+.Control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Control button {
+    font-size: 0.9rem;
+    padding: 1em 1.5em;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.Control .back {
+    background: transparent;
+    color: var(--Cool_gray);
+}
+.Control .next {
+    background: var(--Marine_blue);
+    color: var(--Magnolia);
+
+    transition: background-color 0.1s ease-in-out;
+}
+.Control .next:hover {
+    background: var(--Active_blue);
+}
+
+.Control .confirm {
+    color: var(--Magnolia);
+    background: var(--Purplish_blue);
+    transition: opacity 0.1s ease-in-out;
+}
+.Control .confirm:hover {
+    opacity: 0.6;
+}

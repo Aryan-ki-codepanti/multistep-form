@@ -6,6 +6,7 @@ import StepOne from "./Components/StepOne";
 import StepTwo from "./Components/StepTwo";
 import StepThree from "./Components/StepThree";
 import StepFour from "./Components/StepFour";
+import Control from "./Components/Control";
 
 function App() {
     const { step } = useContext(StepContext);
@@ -38,7 +39,9 @@ function App() {
                 <div className="right">
                     <RenderStep />
                 </div>
-                <div className="bottom">Bottom</div>
+                <div className="bottom">
+                    <Control />
+                </div>
             </div>
         </div>
     );
