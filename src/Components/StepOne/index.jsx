@@ -8,15 +8,24 @@ const StepOne = () => {
             <p>Please provide your name, email address, and phone number.</p>
 
             <div className="input-control">
-                <span>Name</span>
+                <div className="head">
+                    <span>Name</span>
+                    <span>This field is required</span>
+                </div>
                 <input type="text" placeholder="e.g. Stephen King" />
             </div>
             <div className="input-control">
-                <span>Email Address</span>
+                <div className="head">
+                    <span>Email Address</span>
+                    <span>This field is required</span>
+                </div>
                 <input type="email" placeholder="e.g. stephenking@lorem.com" />
             </div>
             <div className="input-control">
-                <span>Phone Number</span>
+                <div className="head">
+                    <span>Phone Number</span>
+                    <span>This field is required</span>
+                </div>
                 <input type="tel" placeholder="+1 234 567 890" />
             </div>
         </div>

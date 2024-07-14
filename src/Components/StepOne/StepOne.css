@@ -10,9 +10,54 @@
 
 .input-control {
     display: flex;
+    gap: 0.4em;
     flex-direction: column;
 }
 
-.input-control span {
+.input-control span,
+.input-control input {
     color: var(--Marine_blue);
+    outline: none;
+}
+.input-control span {
+    font-size: 0.7rem;
+}
+.input-control input {
+    font-weight: 500;
+    border-radius: 6px;
+    border: 1px solid var(--Light_gray);
+    padding: 0.7em;
+}
+
+.input-control input::placeholder {
+    color: var(--Cool_gray);
+}
+.input-control input:focus {
+    border-color: var(--Purplish_blue) !important;
+}
+
+.input-control {
+    margin-top: 1.3em;
+}
+.input-control:nth-of-type(1) {
+    margin-top: 2.3em;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head span:nth-child(2) {
+    color: var(--Strawberry_red);
+    font-weight: 700;
+    display: none;
+}
+
+.input-control.error .head span:nth-child(2) {
+    display: block;
+}
+.input-control.error input {
+    border-color: var(--Strawberry_red);
 }
