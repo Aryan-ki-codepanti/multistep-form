@@ -36,7 +36,7 @@
 }
 
 .container {
-    max-width: 600px;
+    max-width: 850px;
     margin: auto;
     padding: 2em;
 }
@@ -44,7 +44,7 @@
 .App > .container {
     display: grid;
     grid-template-areas: "left right" "left bottom";
-
+    gap: 3em;
     background: var(--White);
     border-radius: 10px;
 }
@@ -55,8 +55,15 @@
 
 .right {
     grid-area: right;
+    padding-top: 2em;
 }
 
 .bottom {
     grid-area: bottom;
+}
+
+.right,
+.bottom {
+    padding-left: 1em;
+    padding-right: 3em;
 }

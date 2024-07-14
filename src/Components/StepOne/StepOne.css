@@ -1,0 +1,18 @@
+.right h1 {
+    color: var(--Marine_blue);
+}
+
+.right p {
+    color: var(--Cool_gray);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control span {
+    color: var(--Marine_blue);
+}

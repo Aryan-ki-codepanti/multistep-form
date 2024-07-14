@@ -47,12 +47,9 @@
     display: grid;
     place-items: center;
     font-size: 0.8rem;
-
-    cursor: pointer;
 }
 
 .step.active .step-num {
     background: var(--Pastel_blue);
     color: var(--Marine_blue);
-    cursor: default;
 }
