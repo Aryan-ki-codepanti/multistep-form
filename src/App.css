@@ -39,7 +39,7 @@
 .container {
     max-width: 850px;
     margin: auto;
-    padding: 2em;
+    padding: 1em;
 }
 
 .App > .container {

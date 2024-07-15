@@ -1,0 +1,48 @@
+.type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    margin-top: 2.3em;
+}
+
+.type-card {
+    border: 1px solid var(--Cool_gray);
+    border-radius: 8px;
+    padding: 0.7em;
+    padding-right: 2.3em;
+
+    min-width: 129px;
+    cursor: pointer;
+}
+
+.type-card img {
+    margin-bottom: 1em;
+}
+
+.type-card p {
+    color: var(--Marine_blue);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.type-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+.type-info span:nth-of-type(1) {
+    font-size: 0.9rem;
+    color: var(--Cool_gray);
+}
+.type-info span:nth-of-type(2) {
+    font-size: 0.78rem;
+    color: var(--Marine_blue);
+}
+
+.type-card.active,
+.type-card:hover {
+    border-color: var(--Purplish_blue);
+    background-color: var(--Magnolia);
+
+    transition: all 0.1s ease-in-out;
+}
