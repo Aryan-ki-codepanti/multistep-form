@@ -1,0 +1,51 @@
+.BillingSwitcher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    background: var(--Magnolia);
+    margin-top: 2em;
+    padding-block: 0.75em;
+    border-radius: 7px;
+
+    --delta: 0.3s;
+}
+
+.plan-name {
+    font-weight: 500;
+    color: var(--Cool_gray);
+
+    transition: color var(--delta) ease-in-out;
+}
+
+.plan-name.active {
+    color: var(--Marine_blue);
+}
+
+.switcher {
+    background: var(--Marine_blue);
+    width: 45px;
+    height: 20px;
+    border-radius: 20px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.switcher .circle.leftC {
+    left: 5px;
+}
+.switcher .circle.rightC {
+    left: 25px;
+}
+.switcher .circle {
+    width: 15px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: var(--Alabaster);
+    position: absolute;
+
+    transition: left var(--delta) ease-in-out;
+}

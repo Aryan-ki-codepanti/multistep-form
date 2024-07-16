@@ -4,6 +4,7 @@ import FormContext from "../../Context/Form/FormContext";
 import arcadeImg from "../../Images/icon-arcade.svg";
 import advancedImg from "../../Images/icon-advanced.svg";
 import proImg from "../../Images/icon-pro.svg";
+import BillingSwitcher from "../BillingSwitcher";
 
 const StepTwo = () => {
     const { plan, setPlan } = useContext(FormContext);
@@ -79,6 +80,8 @@ const StepTwo = () => {
                     </div>
                 </div>
             </div>
+
+            <BillingSwitcher />
         </div>
     );
 };
