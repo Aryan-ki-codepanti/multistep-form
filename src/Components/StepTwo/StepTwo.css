@@ -21,7 +21,8 @@
     margin-bottom: 1em;
 }
 
-.type-card p {
+.type-card p,
+.checklist-option .info span:nth-of-type(1) {
     color: var(--Marine_blue);
     font-weight: 500;
     font-size: 1rem;
@@ -31,7 +32,8 @@
     flex-direction: column;
     gap: 0.3em;
 }
-.type-info span:nth-of-type(1) {
+.type-info span:nth-of-type(1),
+.checklist-option .info span:nth-of-type(2) {
     font-size: 0.9rem;
     color: var(--Cool_gray);
 }

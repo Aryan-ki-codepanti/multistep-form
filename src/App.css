@@ -57,6 +57,9 @@
 .right {
     grid-area: right;
     padding-top: 2em;
+
+    /* //important line */
+    min-width: 483px;
 }
 
 .bottom {

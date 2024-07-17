@@ -1,0 +1,62 @@
+.checklist {
+    margin-top: 2.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.checklist-option {
+    display: flex;
+    gap: 2em;
+
+    align-items: center;
+    justify-content: start;
+    border: 1.5px solid var(--Light_gray);
+    border-radius: 7px;
+    padding: 1em 1.4em;
+    cursor: pointer;
+}
+
+.checklist-option:hover {
+    border-color: var(--Purplish_blue);
+}
+
+.checklist-option.active {
+    border-color: var(--Purplish_blue);
+    background-color: var(--Magnolia);
+}
+
+.checklist-option .tick {
+    width: 17px;
+    aspect-ratio: 1;
+    border: 1px solid var(--Light_gray);
+    border-radius: 3px;
+}
+
+.checklist-option.active .tick {
+    background-image: url("/images/icon-checkmark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--Purplish_blue);
+    background-size: 11px;
+}
+
+.checklist-option .info span:nth-of-type(1) {
+    font-size: 0.9rem;
+}
+
+.checklist-option .info span:nth-of-type(2) {
+    font-size: 0.8rem;
+}
+
+.checklist-option .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.checklist-option .price {
+    margin-left: auto;
+    color: var(--Purplish_blue);
+    font-size: 0.85rem;
+}
