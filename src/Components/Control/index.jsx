@@ -62,10 +62,17 @@ const Control = () => {
                 if (err) setStep(prev => 2);
                 return;
 
+            case 2:
+                setStep(prev => 3);
+                return;
             default:
                 console.log("Dont know what to do");
                 return;
         }
+    };
+
+    const handleBack = e => {
+        setStep(prev => prev - 1);
     };
 
     return (
@@ -73,6 +80,7 @@ const Control = () => {
             <button
                 className="back"
                 style={{ visibility: step === 1 && "hidden" }}
+                onClick={handleBack}
             >
                 Go Back
             </button>
