@@ -65,6 +65,9 @@ const Control = () => {
             case 2:
                 setStep(prev => 3);
                 return;
+            case 3:
+                setStep(prev => 4);
+                return;
             default:
                 console.log("Dont know what to do");
                 return;

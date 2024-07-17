@@ -15,6 +15,13 @@ const FormProvider = ({ children }) => {
         billing: "monthly"
     });
 
+    // step three 3 checkbox state
+    const [addOns, setAddOns] = useState({
+        onlineService: false,
+        storage: false,
+        customizable: false
+    });
+
     return (
         <FormContext.Provider
             value={{
@@ -23,7 +30,9 @@ const FormProvider = ({ children }) => {
                 formOneError,
                 setFormOneError,
                 plan,
-                setPlan
+                setPlan,
+                addOns,
+                setAddOns
             }}
         >
             {children}
