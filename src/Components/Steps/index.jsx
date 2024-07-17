@@ -28,7 +28,7 @@ const Steps = () => {
                     <span>Add-ons</span>
                 </div>
             </div>
-            <div className={step === 4 ? "step active" : "step"}>
+            <div className={[4, 5].includes(step) ? "step active" : "step"}>
                 <div className="step-num">4</div>
                 <div className="step-info">
                     <span>Step 4</span>

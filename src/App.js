@@ -36,14 +36,22 @@ function App() {
 
     return (
         <div className="App">
-            <div className="container ">
+            <div className="container">
                 <div className="left">
                     <Steps />
                 </div>
-                <div className="right">
+                <div
+                    className="right"
+                    style={step === 5 ? { gridRow: "1/3" } : {}}
+                >
                     <RenderStep />
                 </div>
-                <div className="bottom">{step !== 5 && <Control />}</div>
+                {step !== 5 && (
+                    <div className="bottom">
+                        {" "}
+                        <Control />
+                    </div>
+                )}
             </div>
         </div>
     );
