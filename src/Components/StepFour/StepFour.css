@@ -1,0 +1,70 @@
+.summary-box {
+    padding: 1.2em 1.6em 1.4em;
+    border-radius: 6px;
+    margin-top: 2.3em;
+    background: var(--Gray_Box);
+}
+
+.planSum {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.planSum .planSum_name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.planSum .planSum_price {
+    color: var(--Marine_blue);
+    font-weight: 700;
+}
+
+.planSum .planSum_name span:nth-of-type(1) {
+    color: var(--Marine_blue);
+    font-weight: 500;
+}
+.planSum .planSum_name span:nth-of-type(2) {
+    text-decoration: underline;
+    color: var(--Cool_gray);
+    font-size: 0.8rem;
+}
+
+.summary-box hr {
+    margin-block: 1.3em;
+}
+
+.addonSum {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+.addonSum_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addonSum_item span:nth-of-type(1),
+.finalSum span:nth-of-type(1) {
+    color: var(--Cool_gray);
+    font-size: 0.9rem;
+}
+.addonSum_item span:nth-of-type(2) {
+    color: var(--Marine_blue);
+    font-size: 0.9rem;
+}
+
+.finalSum {
+    margin-top: 1.8em;
+    padding-inline: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.finalSum span:nth-of-type(2) {
+    color: var(--Purplish_blue);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
