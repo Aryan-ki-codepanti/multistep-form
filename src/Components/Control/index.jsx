@@ -88,7 +88,9 @@ const Control = () => {
                 Go Back
             </button>
             {step === 4 ? (
-                <button className="confirm">Confirm</button>
+                <button className="confirm" onClick={e => setStep(prev => 5)}>
+                    Confirm
+                </button>
             ) : (
                 <button className="next" onClick={handleNext}>
                     Next Step

@@ -7,6 +7,7 @@ import StepTwo from "./Components/StepTwo";
 import StepThree from "./Components/StepThree";
 import StepFour from "./Components/StepFour";
 import Control from "./Components/Control";
+import StepFive from "./Components/StepFive";
 
 function App() {
     const { step } = useContext(StepContext);
@@ -25,6 +26,9 @@ function App() {
             case 4:
                 return <StepFour />;
 
+            case 5:
+                return <StepFive />;
+
             default:
                 return <div>Error</div>;
         }
@@ -39,9 +43,7 @@ function App() {
                 <div className="right">
                     <RenderStep />
                 </div>
-                <div className="bottom">
-                    <Control />
-                </div>
+                <div className="bottom">{step !== 5 && <Control />}</div>
             </div>
         </div>
     );
