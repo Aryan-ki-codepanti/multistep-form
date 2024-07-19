@@ -12,8 +12,8 @@
     padding: 0.7em;
     padding-right: 2.3em;
 
-    min-width: 129px;
-    min-height: 156px;
+    width: 129px;
+    height: 156px;
     cursor: pointer;
 }
 
@@ -48,4 +48,24 @@
     background-color: var(--Magnolia);
 
     transition: all 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 850px) {
+    .type {
+        flex-direction: column;
+    }
+    .type-card {
+        width: 100%;
+        height: min-content;
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        padding-block: 1em;
+    }
+    .type-card img {
+        margin: 0;
+    }
+    .type-info p {
+        margin: 0;
+    }
 }
