@@ -3,7 +3,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
-    min-height: 500px;
+    height: 500px;
     min-width: 250px;
     padding-top: 2em;
     padding-left: 2em;
@@ -52,4 +52,23 @@
 .step.active .step-num {
     background: var(--Pastel_blue);
     color: var(--Marine_blue);
+}
+@media screen and (max-width: 850px) {
+    .step-info {
+        display: none;
+    }
+    .step-box {
+        background-image: url("/images/bg-sidebar-mobile.svg");
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        height: 172px;
+        border-radius: 0;
+        padding: 0;
+    }
+    .step-box .step {
+        margin-top: -2em;
+    }
 }

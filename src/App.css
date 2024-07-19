@@ -61,7 +61,7 @@
     padding-top: 2em;
 
     /* //important line */
-    min-width: 483px;
+    width: 483px;
 }
 
 .bottom {
@@ -72,4 +72,42 @@
 .bottom {
     padding-left: 1em;
     padding-right: 3em;
+}
+
+/* mobile design */
+@media screen and (max-width: 850px) {
+    .App > .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        background-color: var(--Magnolia);
+
+        position: relative;
+    }
+
+    .left {
+        height: 172px;
+        width: 100%;
+    }
+
+    .right {
+        background: var(--White);
+        padding-inline: 1.3em;
+        padding-bottom: 2em;
+        width: calc(100vw - 50px);
+
+        position: absolute;
+        top: 100px;
+        border-radius: 7px;
+    }
+    .bottom {
+        background: var(--White);
+        margin-top: auto;
+        width: 100%;
+        padding: 1em 25px;
+    }
 }
